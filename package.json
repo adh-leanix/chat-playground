@@ -1,0 +1,22 @@
+{
+  "name": "my-code-assistant",
+  "private": "true",
+  "main": "src/bot.ts",
+  "scripts": {
+    "start": "ts-node src/bot.ts",
+    "format": "prettier --write . \"src/**/*.{ts,tsx,json,mjs,yml}\" --cache",
+    "format:check": "prettier --check . \"src/**/*.{ts,tsx,json,mjs,yml}\" --cache"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^22.7.4",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "glob": "^11.0.0",
+    "openai": "^4.65.0"
+  }
+}
